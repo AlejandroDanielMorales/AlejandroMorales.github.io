@@ -4,7 +4,7 @@
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
-    border: 2px solid azure;
+    border: 4px double azure;
     filter: drop-shadow(8px 8px 4px #7d6ab6);
 }
 
