@@ -25,8 +25,32 @@ function escribirEnPantalla(texto, callback) {
     }
   }, 75);
 }
+function escribirEnPantalla_2(texto, callback) {
+  clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
+
+  let arr = texto.split("");
+  let i = 0;
+  intervalo = setInterval(function () {
+    if (i == arr.length - 1) {
+      document.getElementById("texto-descripcion_2").innerHTML = arr.join(""); // Establecer el texto completo
+      clearInterval(intervalo);
+      if (callback) {
+        callback(); // Llamar a la función de devolución de llamada si se proporciona
+      }
+    } else {
+      if (arr[i] == " ") {
+        document.getElementById("texto-descripcion_2").innerHTML += arr[i];
+        document.getElementById("texto-descripcion_2").innerHTML += arr[i + 1];
+        i += 2;
+      } else {
+        document.getElementById("texto-descripcion_2").innerHTML += arr[i];
+        i++;
+      }
+    }
+  }, 75);
+}
 function escribirSobreMi() {
-  var parrafo = document.getElementById("texto-descripcion");
+  var parrafo = document.getElementById("texto-descripcion_2");
   parrafo.innerHTML = "";
   var texto = 
   '\tHola Mundo !, Soy Alejandro Morales\n' +
@@ -52,7 +76,7 @@ function escribirSobreMi() {
 '\t- - HTML | CSS | JavaScript | C# | C++ | T-SQL \n' +
 '\t- - Experiencia en el framework .NET (Ado.Net, ASP.Net, Winforms, Webforms)\n' +
 '\t- - SQL Server y SQL Management Studio\n';
-  document.getElementById("texto-descripcion").textContent = escribirEnPantalla(texto, function () {
+  document.getElementById("texto-descripcion_2").textContent = escribirEnPantalla_2(texto, function () {
 
   });
 }
