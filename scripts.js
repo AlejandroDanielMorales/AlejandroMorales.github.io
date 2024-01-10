@@ -112,10 +112,10 @@ function cambiarImagenes(numero) {
         carruselContainer.style.visibility = 'visible';
         descripcion.style.visibility = 'visible';
         titulo.textContent = 'Cart Web';
-        imagenes[0].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
-        imagenes[1].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
-        imagenes[2].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
-        auxdes = 'Un proyecto  webforms de compra venta de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
+        imagenes[0].setAttribute('src', 'CartWeb1.jpg');
+        imagenes[1].setAttribute('src', 'CartWeb2.jpg');
+        imagenes[2].setAttribute('src', 'CartWeb3.jpg');
+        auxdes = 'Un proyecto  webforms de compra venta de articulos el cual tiene un carrito de compras y busqueda filtrada de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
         escribirEnPantalla(auxdes);
         break;
    
@@ -123,9 +123,9 @@ function cambiarImagenes(numero) {
         carruselContainer.style.visibility = 'visible';
         descripcion.style.visibility = 'visible';
         titulo.textContent = 'Airjet Web';
-        imagenes[0].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
-        imagenes[1].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
-        imagenes[2].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
+        imagenes[0].setAttribute('src', 'AirjetWeb1.jpg');
+        imagenes[1].setAttribute('src', 'AirjetWeb2.jpg);
+        imagenes[2].setAttribute('src', 'AirjetWeb3.jpg');
         auxdes = 'Proyecto webforms de sistema de reservas de vuelos privados  con registro y logueo de  usuarios cliente y empleados, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
         escribirEnPantalla(auxdes);
         break;
