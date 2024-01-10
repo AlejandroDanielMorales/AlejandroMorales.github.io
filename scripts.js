@@ -122,7 +122,7 @@ function cambiarImagenes(numero) {
       case 5:
         carruselContainer.style.visibility = 'visible';
         descripcion.style.visibility = 'visible';
-        titulo.textContent = 'Airjet Web;
+        titulo.textContent = 'Airjet Web';
         imagenes[0].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
         imagenes[1].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
         imagenes[2].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
