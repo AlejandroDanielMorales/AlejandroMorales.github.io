@@ -72,7 +72,7 @@ function cambiarImagenes(numero) {
   descripcion.style.visibility = 'visible';
 
 
-  if (numero >= 1 && numero <= 4) {
+  if (numero >= 1 && numero <= 5) {
     titulo.textContent = ''; // Limpiar el título mientras se actualiza
     descripcion.textContent = ''; // Limpiar la descripción antes de comenzar el nuevo tipeo
     clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
