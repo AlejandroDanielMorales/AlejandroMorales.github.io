@@ -1,5 +1,6 @@
 
-let intervalo; // Variable global para almacenar el intervalo del efecto de tipeo
+let intervalo; 
+let intervalo_2;// Variable global para almacenar el intervalo del efecto de tipeo
 
 function escribirEnPantalla(texto, callback) {
   clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
@@ -26,14 +27,14 @@ function escribirEnPantalla(texto, callback) {
   }, 75);
 }
 function escribirEnPantalla_2(texto, callback) {
-  clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
+  clearInterval(intervalo_2); // Detener cualquier efecto de tipeo anterior
 
   let arr = texto.split("");
   let i = 0;
-  intervalo = setInterval(function () {
+  intervalo_2 = setInterval(function () {
     if (i == arr.length - 1) {
       document.getElementById("texto-descripcion_2").innerHTML = arr.join(""); // Establecer el texto completo
-      clearInterval(intervalo);
+      clearInterval(intervalo_2);
       if (callback) {
         callback(); // Llamar a la función de devolución de llamada si se proporciona
       }
