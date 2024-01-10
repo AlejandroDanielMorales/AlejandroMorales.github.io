@@ -124,7 +124,7 @@ function cambiarImagenes(numero) {
         descripcion.style.visibility = 'visible';
         titulo.textContent = 'Airjet Web';
         imagenes[0].setAttribute('src', 'AirjetWeb1.jpg');
-        imagenes[1].setAttribute('src', 'AirjetWeb2.jpg);
+        imagenes[1].setAttribute('src', 'AirjetWeb2.jpg');
         imagenes[2].setAttribute('src', 'AirjetWeb3.jpg');
         auxdes = 'Proyecto webforms de sistema de reservas de vuelos privados  con registro y logueo de  usuarios cliente y empleados, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
         escribirEnPantalla(auxdes);
