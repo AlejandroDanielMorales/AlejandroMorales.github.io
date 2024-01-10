@@ -72,7 +72,7 @@ function cambiarImagenes(numero) {
   descripcion.style.visibility = 'visible';
 
 
-  if (numero >= 1 && numero <= 4) {
+  if (numero >= 1 && numero <= 5) {
     titulo.textContent = ''; // Limpiar el título mientras se actualiza
     descripcion.textContent = ''; // Limpiar la descripción antes de comenzar el nuevo tipeo
     clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
@@ -116,6 +116,17 @@ function cambiarImagenes(numero) {
         imagenes[1].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
         imagenes[2].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
         auxdes = 'Un proyecto  webforms de compra venta de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
+        escribirEnPantalla(auxdes);
+        break;
+   
+      case 5:
+        carruselContainer.style.visibility = 'visible';
+        descripcion.style.visibility = 'visible';
+        titulo.textContent = 'Airjet Web;
+        imagenes[0].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
+        imagenes[1].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
+        imagenes[2].setAttribute('src', 'https://t4.ftcdn.net/jpg/01/01/97/41/240_F_101974188_JmL9UeRv9Vr5Xgy2mLYDy0p1cCKvixes.jpg');
+        auxdes = 'Proyecto webforms de sistema de reservas de vuelos privados  con registro y logueo de  usuarios cliente y empleados, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
         escribirEnPantalla(auxdes);
         break;
 
