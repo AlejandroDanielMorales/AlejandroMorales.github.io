@@ -1,3 +1,7 @@
+#carruselContainer,
+#texto-descripcion {
+  visibility: hidden;
+}
 #MyProfilePhoto{
     width: 10%;
     height: 80%;
