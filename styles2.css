@@ -38,7 +38,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-     display: flex;
+    display: flex;
     justify-content: center; 
     height: 110vh;
     filter: drop-shadow(8px 8px 4px #7d6ab6);
@@ -99,6 +99,7 @@
     margin :0;
     padding :0;
     background-image: url('Sidebar.jpg'); 
+    background-size:cover; 
     
 }
 #ProyectsBody{
@@ -107,7 +108,7 @@
     background-size:cover; 
     margin: 0; 
     padding: 0;
-    height:50%;
+    height:100%;
         
 }
 #CurrentProyectContent{
@@ -115,11 +116,11 @@
     margin-top:0; 
     margin-bottom:2%; 
     margin-left:25%;
-    height:50%; 
+    height:80%; 
     width:60%; 
     backdrop-filter: blur(20px); 
     position: relative;
-    box-shadow: 5px 5px 15px gray;   
+    box-shadow: 8px 8px 4px #9053b7;   
 }
 #carruselContainer{
     margin-top:2%; 
@@ -129,4 +130,10 @@
     position: relative; 
     height:60%; 
     width:90%;
+}
+#carousel-inner{
+    width: 100%; 
+    height: 100%;
+    display: flex;  
+    align-items: center; 
 }
