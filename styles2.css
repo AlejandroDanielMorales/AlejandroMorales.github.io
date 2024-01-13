@@ -142,7 +142,7 @@
       align-items: center; 
   }
     #MyBackgroud {
-      height:100vh;  
+      height:50vh;  
       width: 100%;    
     }
   hr{
@@ -242,7 +242,7 @@
      
   }
       #miCarousel{
-    height:100vh;
+    height:90vh;
     width:70vh; 
    
   }
