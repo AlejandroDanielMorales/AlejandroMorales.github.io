@@ -1,202 +1,272 @@
-#carruselContainer,
-#texto-descripcion {
-  visibility: hidden;
-}
-#MyProfilePhoto{
-    width: 10%;
-    height: 80%;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    border: 4px double azure;
-    filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
 
-#texto-descripcion_2 {
-    margin-top: 10vh;
-    color: yellow;
-     display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 1.8vh;  
-    font-family: Consolas, monaco, monospace;
-    margin-left: 50vh;
-    height: 100vh;   
-    width: 100vh;  
-   
 
-    align-items: center; 
-}
-#texto-descripcion{
-    color: azure;
-    margin-left:10vh; 
-    margin-right:10;
-    font-size: 110%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family:Consolas, monaco, monospace;
-}
 
-#computer {
-    margin-top: 5%;
-    background-image: url('CompuPng.png');
-    color: azure;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-
-    justify-content: center; 
-    height: 110vh;
-    filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
-#MyBackgroud {
-    margin-top: 2%;
-    margin-bottom: 5%;
-    background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
-    background-size: cover;
-    display: block;
-    height: 200vh;  
-    width: 100%;    
-}
-#MyskillsTable{
-    align-items: center; 
-    margin-top: 5%;
-    display: flex; 
-    flex-wrap: wrap; 
-    gap: 10px;margin-left:15%;
-}
-
-#Myskillsrows{
-   display: flex;
-   width: 80%;
-}
-#MyskillsContent{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    height: 50%;
-    filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
-
-@media (max-width: 559px) {  
-    #texto-descripcion {
-        font-size: 1.5em;
-    }
-    #texto-descripcion_2 {
-    margin-top: 0vh;
-    color: yellow;
-   
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 1.8vh;  
-    font-family: Consolas, monaco, monospace;
-    margin-left: 0vh;
-    height: 100vh;   
-    width: 100vh;  
-   
-
-    align-items: center; 
-}
-#texto-descripcion{
-    color: azure;
-    margin-left:0vh; 
-    margin-right:0;
-    font-size: 110%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family:Consolas, monaco, monospace;
-}
-
-#computer {
-    margin-top: 5%;
-    background-image: url('CompuPng.png');
-    color: azure;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-
-    justify-content: center; 
-    height: 110vh;
-    filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
-    #computer {
-        height: 10 0vh;
-    }
-    #MyBackgroud {
-        height: 200vh;
-    }
-}
-
-.transition-opacity {
-    transition: opacity 5s ease-in-out;
-}
-#Proyects_Zone{
+@media (max-width: 1650px) { 
+  #carruselContainer,
+  #texto-descripcion {
+    visibility: hidden;
+  }
+  #MyProfilePhoto{
+      width: 10%;
+      height: 80%;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 4px double azure;
+      filter: drop-shadow(8px 8px 4px #7d6ab6);
+  }
+  
+  #texto-descripcion_2{
+      margin-top: 6.5%;
+      margin-left:10%;
+      margin-right:0%;
+      width:100%;
+      height:100%;
+      color:yellow;
+      display:flex;
+      text-shadow: 2vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
+      font-size:100%;  
+      font-family: Consolas, monaco, monospace;
+  }
+  #texto-descripcion{
+      color: azure;
+      margin-left:15%; 
+      margin-right:10;
+      position: absolute;
+      top: 80%;
+      left: -15%;
+      font-size: 110%;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family:Consolas, monaco, monospace;
+  }
+  
+  
+  #computer {
+      margin-top: 5%;
+  
+      
+      
+      width:90%;
+      height:100%;
+      background-image: url('CompuPng.png');
+      color: azure;
+      background-size:cover;
+      background-repeat: no-repeat;
+  
+  
+      justify-content: center; 
+      filter: drop-shadow(8px 8px 4px #7d6ab6);
+  }
+  #MyBackgroud {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
+      background-size: cover;
+      display: block;
+      height: 200vh;  
+      width: 100%;    
+  }
+  #MyskillsTable{
+      align-items: center; 
+      margin-top: 5%;
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 10px;margin-left:15%;
+  }
+  
+  #Myskillsrows{
+     display: flex;
+     width: 80%;
+  }
+  #MyskillsContent{
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      width: 100%; 
+      height: 50%;
+      filter: drop-shadow(8px 8px 4px #7d6ab6);
+  }
+  
+  
+  
+  .transition-opacity {
+      transition: opacity 5s ease-in-out;
+  }
+  #Proyects_Zone{
+      height:80vh;
+      width:100%;
+  }
+  #ProyectsSidebar{
+      
+      background-image: url('Sidebar.jpg'); 
+      background-size:cover;
+      font-size: 0.82em;   
+      color:azure;
+  }
+  #ProyectsBody{
     
-
+      background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
+      background-size:cover; 
+      
+          
+  }
+  #CurrentProyectContent{  
+      height:100%; 
+      width:100%; 
+      backdrop-filter: blur(20px); 
+      position: relative;
+     
+  }
+  #carruselContainer{
+      margin-top:2%; 
+      margin-left:20%; 
+      margin-bottom: 0; 
+      margin-right: 20%; 
+      position: relative; 
+      height:70vh; 
+      width:70%;
+  }
+  #miCarousel{
     height:100vh;
-    width:100%;
-    margin-top:2%;
-}
-#ProyectsSidebar{
+    width:100vh; 
+    object-fit:fill;
+  }
+ #carousel-inner{
+      height:70vh;
+      width:100vh;
+      margin-left:5vh;
+    }
 
-    background-image: url('Sidebar.jpg'); 
-    background-size:cover;
-    font-size: 0.82em;   
-    color:azure;
-}
-#ProyectsBody{
-    display: block;
-    background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
-    background-size:cover; 
-    height:100%;
-        
-}
-#CurrentProyectContent{
-    display: flex;  
-    height:90vh; 
-    width:100%; 
-    backdrop-filter: blur(20px); 
-    position: relative;
-    box-shadow: 8px 8px 4px #9053b7;   
-}
-#carruselContainer{
-    margin-top:2%; 
-    margin-left:10%; 
-    margin-bottom: 0; 
-    margin-right: 10%; 
-    position: relative; 
-    height:70vh; 
-    width:70%;
-}
-#carousel-inner{
-    height: 100%;
-    width:100%;
-}
-#ProyectDescription{
-    backdrop-filter: blur(20px); 
-    height: 30vh;
-    width:100vh;
+  #AboutMeContainer{
+      height:50%;
+      width:100%;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+  }
+  
+  hr{
+      color:azure;
+  }
+  body{
+      display: block;
+  }
+  .carousel-control-prev{
+  height:40%;
+  }
+  .carousel-control-next{
+      height:40%;
+      
+  }
+  
+  }
+  @media (max-width: 1600px) {  
+    #texto-descripcion_2{
+      font-size:97.5%;  
+  }
+  }
+  @media (max-width: 1550px) {  
+    #texto-descripcion_2{
+      font-size:95%;  
+  }
+  }    
+  @media (max-width: 1500px) {  
+    #texto-descripcion_2{
+      font-size:92.5%;  
+  }
+  }
+  @media (max-width: 1450px) {  
+    #texto-descripcion_2{
+      font-size:90%;  
+  }
+  }
+  @media (max-width: 1400px) {  
+    #texto-descripcion_2{
+      font-size:87.5%;  
+  }
+  }    
+  @media (max-width: 1350px) {  
+    #texto-descripcion_2{
+      font-size:85%;  
+  }
+  }
+  @media (max-width: 1300px) {  
+    #texto-descripcion_2{
+      font-size:82.5%;  
+  }
+  }
+  @media (max-width: 1250px) {  
+    #texto-descripcion_2{
+      font-size:80%;  
+  }
+  }    
+  @media (max-width: 1200px) {  
+    #texto-descripcion_2{
+      font-size:77.5%;  
+  }
+  }
+  @media (max-width: 1150px) {  
+    #texto-descripcion_2{
+      font-size:75%;  
+  }
+  }
+  @media (max-width: 1100px) {  
+    #texto-descripcion_2{
+      font-size:72.5%;  
+  }   
+  }
+  @media (max-width: 1050px) {  
+    #texto-descripcion_2{
+      font-size:70%;  
+  }
+      #computer{
+           background-size:contain;
+      }
+    #texto-descripcion{
+      margin-left:15%; 
+      margin-right:10;
+      position: absolute;
+      top: 56%;
+      left: -15%;
+     
+  }
+      #Proyects_Zone{
+      height:60vh;
+      width:100%;
+  }
+      #CurrentProyectContent{  
+      height:80%; 
+      width:100%; 
+      backdrop-filter: blur(20px); 
+      position: relative;
+     
+  }
+      #miCarousel{
+    height:100vh;
+    width:70vh; 
+   
+  }
+    #carousel-inner{
+      height:70vh;
+      width:70vh;
+     
+    }
+      #carruselContainer{
+      margin-top:2%; 
+      margin-left:15%; 
+      margin-bottom: 0; 
+      margin-right: 1%; 
+      position: relative; 
+      height:70vh; 
+      width:70%;
+  }
     
-    display: flex; 
-    align-items: center;
-
-
-}
-hr{
-    color:azure;
-}
-body{
-    display: block;
-}
-.carousel-control-prev{
-height:50vh;
-}
-.carousel-control-next{
-    height:50vh;
-}
-.carousel-item{
-   display:flex;
-
-}
-.d-block .w-100 .img-fluid{
-    display:flex;
-}
+  }
+  @media (max-width: 600px) {  
+      #texto-descripcion_2{
+        font-size:50%;  
+    }
+        #computer{
+             background-size:contain;
+        }
+  }
