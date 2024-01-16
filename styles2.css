@@ -1,4 +1,13 @@
-@media (max-width: 1650px) { 
+@media(min-width: 2300px)
+{
+  
+  #texto-descripcion_2{
+     
+      font-size:12px;  
+      
+  }
+
+  }
   #carruselContainer,
   #texto-descripcion {
     visibility: hidden;
@@ -159,7 +168,7 @@
       
   }
   
-  }
+ 
   @media (max-width: 1600px) {  
     #texto-descripcion_2{
       font-size:97.5%;  
@@ -332,7 +341,7 @@
   }
   
   }
-  @media (max-width: 600px) {  
+  @media (max-width: 400px) {  
       #texto-descripcion_2{
         font-size:50%;  
     }
@@ -349,5 +358,12 @@
      #miCarousel{
     height:50vh;
     width:50vh; 
+  }
+     #CurrentProyectContent{  
+      height:3vh; 
+      width:52vh; 
+      backdrop-filter: blur(20px); 
+      position: relative;
+     
   }
   }
