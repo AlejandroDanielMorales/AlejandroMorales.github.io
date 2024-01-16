@@ -267,12 +267,12 @@
       align-items: center; 
   }
     #MyBackgroud {
-      height:120vh;  
+      height:90vh;  
       width: 100%;    
     }
     #computer{
       height:70vh;
-      width:76vh;
+      width:55vh;
       margin-top:30%;
       background-size:contain;
     }
@@ -286,19 +286,19 @@
     width:50vh; 
   }
       #CurrentProyectContent{  
-      height:30vh; 
-      width:72vh; 
+      height:45vh; 
+      width:52vh; 
       backdrop-filter: blur(20px); 
       position: relative;
      
   }
       #MyskillsTable{
       align-items: center; 
-      margin-top:25vh;
+      margin-top:2.5vh;
       display: flex; 
       flex-wrap: wrap; 
       gap:1vh;
-      margin-left:20vh;
+
   }
   
   #Myskillsrows{
@@ -325,6 +325,10 @@
       text-shadow: 2vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
       font-size:60%;  
       font-family: Consolas, monaco, monospace;
+  }
+     #miCarousel{
+    height:50vh;
+    width:30vh; 
   }
   
   }
