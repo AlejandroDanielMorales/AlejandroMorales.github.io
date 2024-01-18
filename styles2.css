@@ -193,10 +193,10 @@ section{
 @media(min-width : 600px)
 {
 section{
-  height:60vh;
+  height:90vh;
 }
 section  .proyects{
-  height:30vh;
+  height:60vh;
 }
 #texto-descripcion_2{
   
