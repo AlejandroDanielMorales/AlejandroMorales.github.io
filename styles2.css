@@ -10,29 +10,46 @@ hr{
 body{
   display: block;
 }
-
-
-section{
-  height:135vh;
+*{
+  border-radius:10px;
+  margin:2px;
+  color:azure;
+  
 }
 
-#MyProfilePhoto{
-  width: 10%;
-  height: 80%;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    border: 4px double azure;
-    filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
+
+
 /*------------------About---------------*/
-#about{
+.about{
+  height:135vh;
   background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
   background-size: cover;
+}
+#Banner{
+  background-color:rebeccapurple;
+  height:30%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 #tituloProyecto{
   color:azure;
   margin-top: auto;
+  }
+
+  #MyProfilePhoto{
+    width: 20%;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto;
+      border: 4px double azure;
+      filter: drop-shadow(8px 8px 4px #7d6ab6);
+  }
+  .myphoto{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    margin-bottom: 2%;
   }
   #texto-descripcion_2{
     height:80vh;
@@ -91,20 +108,23 @@ section{
     transition: opacity 5s ease-in-out;
 }
 /*------------------Proyects-----------------*/
+.proyects{
+  height:135vh;
+}
 #ProyectsSidebar{
-  width:20%;
+  width:25%;
+  margin-left:12px;
   background-color:rebeccapurple; 
   background-size:cover;
   font-size:  1.1vw; 
   color:azure;
+
 }
 #ProyectsBody{
-  width:80%;
+  width:73%;
   background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
   background-size:cover; 
-  display: flex;
-  align-items: center; 
-  justify-content: center;
+  
       
 }
 #carruselContainer{
@@ -126,7 +146,8 @@ section{
   }
 
 /*------------------ContactMe---------------*/
-#contact{
+.contact{
+  height:135vh;
   background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
   background-size: cover;
   display:block;
@@ -134,30 +155,82 @@ section{
   align-items: center;
 }
 #MyFormBack{
-  margin:0;
+ 
   height :70%;
-  width : 60%;
+  width : 50%;
+  margin-left:25%;
+  
   color : azure;
    backdrop-filter: blur(40px);
    justify-content: center;
    box-shadow: 5px 5px 15px gray;
+   margin-bottom:2%;
 }
 #formulario{
   margin:10%; 
   justify-content: flex-start;
 }
+#btnsend{
+  background-color:transparent;
+  border: 1px solid azure;
+  color: azure;
+  width: 40%;
+}
 
 /*------------Responsive-----------*/
-@media(max-width: 900px)
-{
+@media(max-width: 1122px){
+  #ProyectsBody{
+  width:71%;
+ 
   
-  section{
+      
+} 
+     .about{
+    height:150vh;
+     }
+  .computer {
+    
+  
+
+  width:100%;
+  color: azure;
+  margin-left:0%;
+
+  }
+    #texto-descripcion_2{
+  
+    font-size: 1.5vw; 
+  
+  }
+}
+  @media(max-width: 900px)
+{
+    .about{
+    height:150vh}
+   #texto-descripcion_2{
+  
+    font-size: 1.4vw; 
+    margin-left:0%;
+  
+  }
+  
+}
+  
+@media(max-width: 520px)
+{
+   .about{
     height:90vh;
   }
-  section  .proyects{
-    height:40vh;
+  
+  .proyects{
+    height:70vh;
   }
+  .contact{
+    height:100vh;
+  }
+ 
   .computer {
+    
   position: relative;
 
   width:100%;
@@ -167,7 +240,7 @@ section{
   }
   #texto-descripcion_2{
   
-    font-size: 1.1vw; 
+    font-size: 1.5vw; 
     margin-left:0%;
   
   }
@@ -182,29 +255,17 @@ section{
 
   }
   #MyFormBack{
-
-  height :85%;
+  margin-left:7.5%;
+  height :80%;
   width : 85%;
 
-}
-  
 
- }
-@media(min-width : 600px)
-{
-section{
-  height:90vh;
 }
-section  .proyects{
-  height:60vh;
-}
-#texto-descripcion_2{
+
+#ProyectsBody{
+  width:68%;
+ 
   
-  font-size: 1.0vw; 
-  margin-left:0%;
-  
-}
-#ProyectsSidebar{
-  font-size:3vw;
-}
+      
+} 
 }

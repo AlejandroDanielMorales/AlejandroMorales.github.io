@@ -56,11 +56,11 @@
     </div>
   </nav>
 
-<div id ="Banner" style="background-color:rebeccapurple; height:15%;">
+<div id ="Banner">
   <center>
     <h1 style="color:azure">Alejandro Morales</h1>
     <div id="MyProfilePhoto">
-      <img src="Images/ALE.jpeg" alt="Tu foto" style=" width: 100%;height: 100%;object-fit: cover;">
+      <img class="myphoto"src="Images/ALE.jpeg" alt="Tu foto">
     </div>
   </center>
 </div>
@@ -69,7 +69,7 @@
 
 
 
-<section id="about">
+<section class="about">
   <div class="container-fluid">
   <center>
     <h1 style="color:azure">Sobre mi</h1>
@@ -135,14 +135,14 @@
 
 
 
-<section class="projects" class="bg-light">
+<section class="projects" >
     <div class="row" style="height:100%;">
-      <div class="col-md-2 container-fluid" id="ProyectsSidebar">
+      <div class="col-md-0" id="ProyectsSidebar">
 
-        <svg class="bi me-2" width="40" height="32"></svg>
+        
         <center>
           <span class="fs-4">My projects</span>
-        </center>
+        
         <hr>
 
 
@@ -168,10 +168,10 @@
 
           <label class="nav-link" style="margin-top:15%;margin-bottom:30%;" onclick="cambiarImagenes(5)">Airjet web
           </label>
-
+        </center>
 
       </div>
-      <div class="col-md-10" id="ProyectsBody">
+      <div class="col-md-0" id="ProyectsBody">
         <center>
           <h1 Id="tituloProyecto" >
             </h2>
@@ -206,7 +206,7 @@
     </div>
 
 </section>
-<section id="contact">
+<section class="contact">
 
         <div id="MyFormBack">
           <center>
@@ -221,14 +221,16 @@
               <input type="text" id="asunto" style="width:100%;" name="asunto" required><br><br>
               <label for="mensaje">Message:</label><br>
               <textarea id="mensaje" style="width:100%;" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-              <button type="submit" class="btn btn-primary"
-                style="background-color:transparent;border: 1px solid azure;color: azure;width: 20%;">Enviar</button>
+              <button type="submit" id="btnsend">Send</button>
               <input type ="hidden" name="_next" value="https://alejandrodanielmorales.github.io/AlejandroMoralesDeveloper.github.io/MensajeEnviado.html">
               <input type ="hidden" name="_captcha" value="false">
             </form>
           </div>
-        </center>
+      </center>
         </div>
+        <center>
+        <h2> Social media</h2>
+      </center>
     <div id="skills" class="container-fluid">
 
     <div class="MyskillsContent">
