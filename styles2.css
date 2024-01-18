@@ -148,7 +148,7 @@ section{
 }
 
 /*------------Responsive-----------*/
-@media(max-width: 780px)
+@media(max-width: 900px)
 {
   
   section{
@@ -168,6 +168,7 @@ section{
   #texto-descripcion_2{
   
     font-size: 1.1vw; 
+    margin-left:0%;
   
   }
   #texto-descripcion{
