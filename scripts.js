@@ -50,6 +50,22 @@ function escribirEnPantalla_2(texto, callback) {
     }
   }, 75);
 }
+document.addEventListener("DOMContentLoaded", function() {
+      var navLinks = document.querySelectorAll('.navbar-nav a');
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          var targetId = this.getAttribute('href').substring(1);
+          var targetSection = document.getElementById(targetId);
+          var targetPosition = targetSection.offsetTop;
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+
 function escribirSobreMi() {
   var parrafo = document.getElementById("texto-descripcion_2");
   parrafo.innerHTML = "";
