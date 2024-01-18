@@ -120,20 +120,23 @@ body{
   color:azure;
 
 }
+
 #ProyectsBody{
   width:73%;
   background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
   background-size:cover; 
   
-      
+    
 }
 #carruselContainer{
-  width:90%;
+  width:80%;
+  height:80%;
+  margin-top:10%;
+  margin-left:10%;
 }
 #texto-descripcion{
   color: azure;
-
-
+  height:40vh;
   top: 90%;
   left: -15%;
   font-size: 1.1vw; 
@@ -238,12 +241,7 @@ body{
   margin-left:0%;
 
   }
-  #texto-descripcion_2{
-  
-    font-size: 1.5vw; 
-    margin-left:0%;
-  
-  }
+
   #texto-descripcion{
   
     font-size: 3vw; 
