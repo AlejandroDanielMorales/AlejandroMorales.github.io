@@ -190,3 +190,21 @@ section{
   
 
  }
+@media(max-width: 600px)
+{
+section{
+  height:60vh;
+}
+section  .proyects{
+  height:30vh;
+}
+#texto-descripcion_2{
+  
+  font-size: 1.0vw; 
+  margin-left:0%;
+  
+}
+#ProyectsSidebar{
+  font-size:3vw;
+}
+}
