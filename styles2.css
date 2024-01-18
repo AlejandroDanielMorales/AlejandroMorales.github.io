@@ -3,6 +3,19 @@
 #texto-descripcion {
   visibility: hidden;
 }
+/*------------------general---------------*/
+hr{
+  color:azure;
+}
+body{
+  display: block;
+}
+
+
+section{
+  height:135vh;
+}
+
 #MyProfilePhoto{
   width: 10%;
   height: 80%;
@@ -12,18 +25,90 @@
     border: 4px double azure;
     filter: drop-shadow(8px 8px 4px #7d6ab6);
 }
+/*------------------About---------------*/
+#about{
+  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
+  background-size: cover;
+}
 #tituloProyecto{
   color:azure;
   margin-top: auto;
   }
-#texto-descripcion_2{
- 
- height:78vh;
-  color:yellow;
+  #texto-descripcion_2{
+    height:80vh;
+     color:yellow;
+     position: absolute;
+     top: 10%;
+     left: 2%; 
+     text-shadow: 2vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
+     width: 100%;
+     font-size: 1.1vw; 
+     overflow: hidden;
+     text-overflow: ellipsis; 
+     line-height: 1.5;
+     font-family: Consolas, monaco, monospace;
+   }
 
-  text-shadow: 2vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
-  font-size:105%;  
-  font-family: Consolas, monaco, monospace;
+
+.computer {
+  position: relative;
+  height:40%;
+  width:70%;
+  color: azure;
+  margin-left:15%;
+
+}
+.computer img{
+  object-fit: contain;
+  filter: drop-shadow(8px 8px 4px #7d6ab6);
+}
+/*------------------Skills---------------*/
+#skills {
+  display: flex;
+  height:10%;
+  align-items: center; 
+  justify-content: center;
+
+}
+
+.MyskillsContent {
+  height:10vh;
+  width:10vh;
+  margin: 10px;
+  display: inline-block;
+}
+
+.MyskillsContent img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
+  filter: drop-shadow(8px 8px 4px #7d6ab6);
+}
+
+
+
+.transition-opacity {
+    transition: opacity 5s ease-in-out;
+}
+/*------------------Proyects-----------------*/
+#ProyectsSidebar{
+  width:20%;
+  background-color:rebeccapurple; 
+  background-size:cover;
+  font-size:  1.1vw; 
+  color:azure;
+}
+#ProyectsBody{
+  width:80%;
+  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
+  background-size:cover; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+      
+}
+#carruselContainer{
+  width:90%;
 }
 #texto-descripcion{
   color: azure;
@@ -31,102 +116,26 @@
 
   top: 90%;
   left: -15%;
-  font-size: 105%;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.1vw; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
   font-family:Consolas, monaco, monospace;
 }
-
-
-#computer {
-
-  height:80vh;
-  background-image: url('Images/Tablet.png');
-  color: azure;
-  background-size:contain;
-  background-repeat: no-repeat;
-
-  filter: drop-shadow(8px 8px 4px #7d6ab6);
-}
-#MyBackgroud {
-  height:100vh;
-  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
-  background-size: cover;
-
-}
-#skills {
-  display: flex; /* Usa flexbox para alinear los elementos en línea */
-}
-
-.MyskillsContent {
-  margin: 10px; /* Agrega margen entre los elementos si es necesario */
-  display: inline-block; /* Muestra los elementos en línea uno al lado del otro */
-}
-
-
-
-
-.transition-opacity {
-    transition: opacity 5s ease-in-out;
-}
-#Proyects_Zone{
-
-}
-#ProyectsSidebar{
-  
-  background-color:rebeccapurple; 
-  background-size:cover;
-  font-size: 0.82em;   
-  color:azure;
-}
-#ProyectsBody{
-
-  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
-  background-size:cover; 
-  
-      
-}
-
-#carruselContainer{
-
-}
-#miCarousel{
-
-}
-#carousel-inner{
-
-}
-
-#AboutMeContainer{
- 
-}
-
-hr{
-    color:azure;
-}
-body{
-    display: block;
-}
-.carousel-control-prev{
-height:40%;
-}
-.carousel-control-next{
-    height:40%;
-    
-}
 .bi , .me-2{
-margin-top:15vh;
-}
-/*------------------ContactMe---------------*/
-#ContactMe{
+  margin-top:15vh;
+  }
 
+/*------------------ContactMe---------------*/
+#contact{
   background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
   background-size: cover;
-  
+  display:flex;
   justify-content: center;
+  align-items: center;
 }
 #MyFormBack{
   margin:0;
-  height :100%;
+  height :70%;
   width : 60%;
   color : azure;
    backdrop-filter: blur(40px);
@@ -138,3 +147,45 @@ margin-top:15vh;
   justify-content: flex-start;
 }
 
+/*------------Responsive-----------*/
+@media(max-width: 600px)
+{
+  
+  section{
+    height:90vh;
+  }
+  section  .proyects{
+    height:40vh;
+  }
+  .computer {
+  position: relative;
+
+  width:100%;
+  color: azure;
+  margin-left:0%;
+
+  }
+  #texto-descripcion_2{
+  
+    font-size: 1.5vw; 
+  
+  }
+  #texto-descripcion{
+  
+    font-size: 3vw; 
+  
+  }
+  #ProyectsSidebar{
+
+    font-size:3vw;
+
+  }
+  #MyFormBack{
+
+  height :85%;
+  width : 80%;
+
+}
+  
+
+ }
