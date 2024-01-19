@@ -5,6 +5,11 @@
 }
 /*------------------general---------------*/
 h1,h2{
+  color:azure;
+  filter: drop-shadow(8px 8px 4px #433B67);
+}
+h2{
+  color:azure;
   filter: drop-shadow(8px 8px 4px #433B67);
 }
 hr{
@@ -34,7 +39,6 @@ body{
     width: 20%;
       border-radius: 50%;
       overflow: hidden;
-      margin: 0 auto;
       border: 4px solid azure;
   display: inline-block;
       filter: drop-shadow(8px 8px 4px #433B67);
