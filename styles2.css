@@ -231,14 +231,14 @@ body{
 @media(max-width: 520px)
 {
    .about{
-    height:90vh;
+    height:80vh;
   }
   
   .proyects{
-    height:70vh;
+    height:60vh;
   }
   .contact{
-    height:100vh;
+    height:90vh;
   }
  
   .computer {
@@ -263,7 +263,7 @@ body{
   }
   #MyFormBack{
   margin-left:7.5%;
-  height :80%;
+  height :75%;
   width : 85%;
 
 
