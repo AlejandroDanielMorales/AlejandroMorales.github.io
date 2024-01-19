@@ -16,14 +16,8 @@ body{
   color:azure;
   
 }
+/*-------------header-------------------*/
 
-
-
-/*------------------About---------------*/
-.about{
-  height:135vh;
-  background-color:#605885; 
-}
 #Banner{
   background-image: url('Images/Banner.svg');
   background-size:cover;
@@ -32,26 +26,36 @@ body{
   justify-content: center;
   align-items: center;
 }
-#tituloProyecto{
-  color:azure;
-  margin-top: auto;
-  }
-
-  #MyProfilePhoto{
+#MyProfilePhoto{
     width: 20%;
       border-radius: 50%;
       overflow: hidden;
       margin: 0 auto;
       border: 4px solid azure;
+  display: inline-block;
       filter: drop-shadow(8px 8px 4px #433B67);
   }
+ #Title{
+   display: inline-block;
+ }
   .myphoto{
     width: 100%;
     height: 100%;
     object-fit:cover;
     margin-bottom: 2%;
   }
-  #texto-descripcion_2{
+
+/*------------------About---------------*/
+.about{
+  height:135vh;
+  background-color:#605885; 
+}
+
+#tituloProyecto{
+  color:azure;
+  margin-top: auto;
+}
+ #texto-descripcion_2{
     height:80vh;
      color:yellow;
      position: absolute;
