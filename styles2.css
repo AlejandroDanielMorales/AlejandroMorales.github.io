@@ -271,7 +271,9 @@ body{
 
 #ProyectsBody{
   width:68%;
- 
+ display:flex;
+  justify-content: center;
+  align-items: center;
   
       
 } 
