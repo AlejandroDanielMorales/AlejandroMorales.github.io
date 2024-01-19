@@ -25,7 +25,8 @@ body{
   background-color:#605885; 
 }
 #Banner{
-  background-color:#605885;
+  background-image: url('Images/Banner.jpg');
+  background-size:cover;
   height:30%;
   display:flex;
   justify-content: center;
