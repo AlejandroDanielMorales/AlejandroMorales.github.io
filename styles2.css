@@ -29,7 +29,7 @@ body{
   border-radius:10px;
   margin:2px;
   background-image: url('Images/Banner.svg');
-  background-size:cover;
+  background-size:contain;
   height:30%;
   display:flex;
   justify-content: center;
