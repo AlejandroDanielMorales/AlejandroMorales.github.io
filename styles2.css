@@ -22,11 +22,10 @@ body{
 /*------------------About---------------*/
 .about{
   height:135vh;
-  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg');
-  background-size: cover;
+  background-color:#605885; 
 }
 #Banner{
-  background-color:rebeccapurple;
+  background-color:#605885;
   height:30%;
   display:flex;
   justify-content: center;
@@ -114,7 +113,7 @@ body{
 #ProyectsSidebar{
   width:25%;
   margin-left:12px;
-  background-color:rebeccapurple; 
+  background-color:#433B67; 
   background-size:cover;
   font-size:  1.1vw; 
   color:azure;
@@ -123,8 +122,7 @@ body{
 
 #ProyectsBody{
   width:73%;
-  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
-  background-size:cover; 
+  background-color:#605885; 
   
     
 }
@@ -151,8 +149,7 @@ body{
 /*------------------ContactMe---------------*/
 .contact{
   height:135vh;
-  background-image: url('https://wallpapersmug.com/download/3840x2160/17fd71/geometry-triangles-abstract.jpg'); 
-  background-size: cover;
+  background-color:#605885;
   display:block;
   justify-content: center;
   align-items: center;
@@ -163,8 +160,8 @@ body{
   width : 50%;
   margin-left:25%;
   
-  color : azure;
-   backdrop-filter: blur(40px);
+  color: azure;
+   background-color :#948DB3; 
    justify-content: center;
    box-shadow: 5px 5px 15px gray;
    margin-bottom:2%;
