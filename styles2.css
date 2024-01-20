@@ -69,7 +69,6 @@ body{
      position: absolute;
      top: 10%;
      left: 2%; 
-     text-shadow: 2vh 2vh 0.5vh rgba(0, 0, 0, 0.5);
      width: 100%;
      font-size: 1.1vw; 
      overflow: hidden;
@@ -111,7 +110,7 @@ body{
   width: 80%;
   height: 80%;
   object-fit: contain; 
-  filter: drop-shadow(8px 8px 4px #7d6ab6);
+  filter: drop-shadow(8px 8px 4px #433B67);
 }
 #skills.container-fluid {
  max-width: vw; 
@@ -147,6 +146,7 @@ body{
   height:80%;
   margin-top:10%;
   margin-left:10%;
+  filter: drop-shadow(8px 8px 4px #433B67);
 }
 #texto-descripcion{
   color: azure;
@@ -179,7 +179,7 @@ body{
   color: azure;
    background-color :#948DB3; 
    justify-content: center;
-   box-shadow: 5px 5px 15px gray;
+   box-shadow: 5px 5px 15px #433B67;
    margin-bottom:2%;
 }
 #formulario{
