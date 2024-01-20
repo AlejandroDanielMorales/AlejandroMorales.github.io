@@ -1,8 +1,8 @@
-
 #carruselContainer,
 #texto-descripcion {
   visibility: hidden;
 }
+
 /*------------------general---------------*/
 h1{
   color:azure;
@@ -22,6 +22,22 @@ body{
   border-radius:10px;
   margin:2px;
   
+}
+.row{
+  height:135vh;
+}
+a {
+  color: rgb(8, 94, 194);
+  text-decoration: none; 
+  left: -15%;
+  bottom:95%;
+  font-size: 1.1vw; 
+  transition: color 0.3s; 
+}
+
+
+a:hover {
+  color: red; 
 }
 /*-------------header-------------------*/
 
@@ -68,7 +84,6 @@ body{
      color:yellow;
      position: absolute;
      top: 10%;
-     left: 2%; 
      width: 100%;
      font-size: 1.1vw; 
      overflow: hidden;
@@ -142,16 +157,17 @@ body{
     
 }
 #carruselContainer{
-  width:80%;
+  width:70%;
   height:80%;
-  margin-top:10%;
-  margin-left:10%;
+  margin-top:1%;
+  margin-left:15%;
   filter: drop-shadow(8px 8px 4px #433B67);
 }
 #texto-descripcion{
   color: azure;
-  
+  border-radius:0%;
   top: 90%;
+  height:35vh;
   left: -15%;
   font-size: 1.1vw; 
   overflow: hidden;
@@ -161,7 +177,9 @@ body{
 .bi , .me-2{
   margin-top:15vh;
   }
-
+.carousel-inner{
+ height:60%;
+}
 /*------------------ContactMe---------------*/
 .contact{
   height:135vh;
@@ -251,16 +269,18 @@ body{
 @media(max-width: 520px)
 {
    .about{
-    height:80vh;
+    height:100vh;
   }
   
   .proyects{
-    height:60vh;
+    height:100vh;
   }
   .contact{
-    height:90vh;
+    height:100vh;
   }
- 
+ .row{
+  height:100vh;
+ }
   .computer {
     
   position: relative;
@@ -270,10 +290,17 @@ body{
   margin-left:0%;
 
   }
-
+  #carruselContainer{
+  width:90%;
+  height:80%;
+  margin-top:-15%;
+  margin-left:0%;
+  filter: drop-shadow(8px 8px 4px #433B67);
+}
   #texto-descripcion{
   
-    font-size: 3vw; 
+    font-size: 1.8vw; 
+    height:15vh;
   
   }
   #ProyectsSidebar{

@@ -1,18 +1,20 @@
 
 let intervalo; 
-let intervalo_2;// Variable global para almacenar el intervalo del efecto de tipeo
+let intervalo_2;
+let finish = false;
 
 function escribirEnPantalla(texto, callback) {
-  clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
-
+ 
+  clearInterval(intervalo); 
+  finish=false;
   let arr = texto.split("");
   let i = 0;
   intervalo = setInterval(function () {
     if (i == arr.length - 1) {
-      document.getElementById("texto-descripcion").innerHTML = arr.join(""); // Establecer el texto completo
+      document.getElementById("texto-descripcion").innerHTML = arr.join(""); 
       clearInterval(intervalo);
       if (callback) {
-        callback(); // Llamar a la función de devolución de llamada si se proporciona
+        callback();
       }
     } else {
       if (arr[i] == " ") {
@@ -25,18 +27,19 @@ function escribirEnPantalla(texto, callback) {
       }
     }
   }, 75);
+
 }
 function escribirEnPantalla_2(texto, callback) {
-  clearInterval(intervalo_2); // Detener cualquier efecto de tipeo anterior
+  clearInterval(intervalo_2);
 
   let arr = texto.split("");
   let i = 0;
   intervalo_2 = setInterval(function () {
     if (i == arr.length - 1) {
-      document.getElementById("texto-descripcion_2").innerHTML = arr.join(""); // Establecer el texto completo
+      document.getElementById("texto-descripcion_2").innerHTML = arr.join(""); 
       clearInterval(intervalo_2);
       if (callback) {
-        callback(); // Llamar a la función de devolución de llamada si se proporciona
+        callback(); 
       }
     } else {
       if (arr[i] == " ") {
@@ -71,29 +74,28 @@ function escribirSobreMi() {
   var parrafo = document.getElementById("texto-descripcion_2");
   parrafo.innerHTML = "";
   var texto = 
-  '\tHola Mundo !, Soy Alejandro Morales\n' +
-  '\tDe 28 años\n' +
-  '\tSoy un Estudiante de  la carrera de Tecnicatura Universitaria en Programación en la \n' +
-  '\tUTN Facultad Regional General Pacheco. Actualmente, me encuentro cursando mi segundo de tres \n' +
-  '\taños con el objetivo de obtener el título de Técnico Universitario en Sistemas Informáticos\n' +
-  '\tCon una sólida formación académica, he adquirido conocimientos fundamentales en programación,\n' +
-  '\tabarcando desde los conceptos básicos hasta temas avanzados.\n' +
+  '\tHello World!, I'+"'"+'m Alejandro Morales\n' +
+  '\tI am a Student of the University Technician degree in Programming at the \n' +
+  '\tUTN General Pacheco Regional Faculty. Currently, I am studying my second of three years Programming  \n' +
+  '\tstud with the aim of obtaining the title of University Technician in Computer Systems.\n' +
+  '\tWith a solid academic background, I have acquired fundamental knowledge in programming,\n' +
+  '\tranging from basic concepts to advanced topics.\n' +
   '\t\n' +
-  '\tConocimientos:\n' +
-  '\t- Fundamentos de la programación\n' +
-  '\t- Programación procedural\n' +
-  '\t- Programación orientada a objetos\n' +
-  '\t- Programación orientada a eventos\n' +
-  '\t- Desarrollo en capas\n' +
-  '\t- Diseño de interfaces\n' +
-  '\t- Manejo de excepciones\n' +
-  '\t- Desarrollo de programas de escritorio y web.\n' +
-  '\t- Creación y manipulación de bases de datos  de Modelo relacional y normalizadas.\n'+
+  '\tKnowledge:\n' +
+  '\t- Programming Fundamentals.\n' +
+  '\t- Procedural programming.\n' +
+  '\t- Object-oriented programming.\n' +
+  '\t- Event-oriented programming.\n' +
+  '\t- Layered development.\n' +
+  '\t- Interface design.\n' +
+  '\t- Exception Handling.\n' +
+  '\t- Development of desktop and web programs.\n' +
+  '\t- Creation and manipulation of relational and normalized Model databases.\n'+
   '\t\n' +
-  '\t- Lenguajes de programación y entornos:\n' +
+  '\t-Programming languages ​​and work environments:\n' +
 '\t- - HTML | CSS | JavaScript | C# | C++ | T-SQL \n' +
-'\t- - Experiencia en el framework .NET (Ado.Net, ASP.Net, Winforms, Webforms)\n' +
-'\t- - SQL Server y SQL Management Studio\n';
+'\t- - Experience on .NET framework  (Ado.Net, ASP.Net, Winforms, Webforms).\n' +
+'\t- - SQL Server | SQL Management Studio | Git | Github Desktop | VS Code | VS Community.\n';
   document.getElementById("texto-descripcion_2").textContent = escribirEnPantalla_2(texto, function () {
 
   });
@@ -103,21 +105,20 @@ function cambiarImagenes(numero) {
   var imagenes = carrusel.querySelectorAll('.carousel-item img');
   var descripcion = document.getElementById('texto-descripcion');
   var titulo = document.getElementById('tituloProyecto');
+  var enlace = document.getElementById("RepoLink");
   var auxdes = "";
+  
 
   var carruselContainer = document.getElementById('carruselContainer');
-
-  // Mostrar el carrusel y la descripción al hacer clic en un label
-
-
+  enlace.innerHTML = ' ';
   carruselContainer.style.visibility = 'visible';
   descripcion.style.visibility = 'visible';
 
 
   if (numero >= 1 && numero <= 5) {
-    titulo.textContent = ''; // Limpiar el título mientras se actualiza
-    descripcion.textContent = ''; // Limpiar la descripción antes de comenzar el nuevo tipeo
-    clearInterval(intervalo); // Detener cualquier efecto de tipeo anterior
+    titulo.textContent = ''; 
+    descripcion.textContent = ''; 
+    clearInterval(intervalo);
 
     switch (numero) {
       case 1:
@@ -127,7 +128,8 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Images/Cardjitsu1.png');
         imagenes[1].setAttribute('src', 'Images/Cardjitsu3.png');
         imagenes[2].setAttribute('src', 'Images/Cardjitsu2.png');
-        auxdes = "Cartjitsu fue el primer juego que programé, un juego de cartas en consola usando lenguaje C++ y librería rlutil aplicando programación procedural y utilizando solo funciones.";
+        auxdes = 'Cartjitsu was the first game I programmed at university, a console card game using the C++ language and a useful library, applying procedural programming and using only functions.The game has a series of rules and milestones similar to the card game uno.The program consists of a menu where you can find the game options, which can be Player vs PC or PC vs PC, the score, game rules and credits.';
+        enlace.href = "https://github.com/AlejandroDanielMorales/The-Cardjitsu-Game"; 
         escribirEnPantalla(auxdes);
         break;
       case 2:
@@ -137,7 +139,8 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Images/Nonox1.png');
         imagenes[1].setAttribute('src', 'Images/Nonox2.png');
         imagenes[2].setAttribute('src', 'Images/Nonox3.png');
-        auxdes = 'Un juego tipo , buscaminas/nonograma y de memoria,Fue programado utilizando C++ , el mismo tiene 3 niveles y puntaje que perdura en disco duro.';
+        auxdes = 'A game developed in C++ with the SFML graphics library. Nonox is a nonogram game, a "Japanese puzzle" or "griddler" which is a type of logic puzzle in which the objective is to discover a hidden image through the interpretation of numbers on a grid.The game has of 3 levels  and  "Score" section where the players scores are recorded. This game also has "Power-up s and helps that decrease the final score.';
+        enlace.href = "https://github.com/AlejandroDanielMorales/The-Nonox-Game"; 
         escribirEnPantalla(auxdes);
         break;
       case 3:
@@ -147,7 +150,8 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Images/cManager2.png');
         imagenes[1].setAttribute('src', 'Images/cManager3.png');
         imagenes[2].setAttribute('src', 'Images/cManager4.png');
-        auxdes = 'Catalog Management es una aplicacion de escritorio hecho con C#, T-SQL ,Ado.net(.Net Framework), es un ABM que impacta directo en la base de datos.';
+        auxdes = 'Catalog Management is a desktop application made with C# using ADO.Net from the .Net framework which applies object-oriented and layer-oriented programming, the program interacts with the database, giving registrations, cancellations and modifications of ,products, brands and categories, the types of articles to be managed in the database being very scalable.';
+        enlace.href = "https://github.com/AlejandroDanielMorales/The-Catalog-Management"; 
         escribirEnPantalla(auxdes);
         break;
       case 4:
@@ -157,7 +161,8 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Images/CartWeb1.jpg');
         imagenes[1].setAttribute('src', 'Images/CartWeb2.jpg');
         imagenes[2].setAttribute('src', 'Images/CartWeb3.jpg');
-        auxdes = 'Un proyecto  webforms de compra venta de articulos el cual tiene un carrito de compras y busqueda filtrada de articulos, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
+        auxdes = 'This is a web application project that we developed between three colleagues, e-commerce type, where the application communicates with the database and reflects all the products in it. The application is able to place a purchase order, whether it is 1 or more products, the same or different, regret purchases and send automatic emails with details of the purchases made.';
+        enlace.href = "https://github.com/AlejandroDanielMorales/The-Cart-Web"; 
         escribirEnPantalla(auxdes);
         break;
    
@@ -168,11 +173,15 @@ function cambiarImagenes(numero) {
         imagenes[0].setAttribute('src', 'Images/AirjetWeb1.jpg');
         imagenes[1].setAttribute('src', 'Images/AirjetWeb2.jpg');
         imagenes[2].setAttribute('src', 'Images/AirjetWeb3.jpg');
-        auxdes = 'Proyecto webforms de sistema de reservas de vuelos privados  con registro y logueo de  usuarios cliente y empleados, utilizando HTML,CSS, C#,T-SQL con libreria Boostrap y Asp.Net ';
+        auxdes = 'Web application for a private flight reservation system with client and employee user login where only the client can register and the employee is registered.The web application performs the following actions like: make a reservation (client),Approve or cancel it based on the availability of resources (Operator),Create flights, assign resources and crew,Cancel or end flights,Check flights in process, completed or canceled for all the properties shown in the flight table.For registration and saving of credentials in the database, we use an algorithm to encrypt the password and not save the password in plain text in the database.';
+        enlace.href = "https://github.com/AlejandroDanielMorales/The-Airjets-web"; 
         escribirEnPantalla(auxdes);
         break;
-
-      // Resto de los casos...
     }
+    
+      enlace.innerHTML = 'View the github repository';
+    
+    
   }
+  
 }
