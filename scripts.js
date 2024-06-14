@@ -88,14 +88,14 @@ function escribirSobreMi() {
   '\t- Event-oriented programming.\n' +
   '\t- Layered development.\n' +
   '\t- Interface design.\n' +
-  '\t- Exception Handling.\n' +
+  '\t- Exception Handling and testing.\n' +
   '\t- Development of desktop and web programs.\n' +
-  '\t- Creation and manipulation of relational and normalized Model databases.\n'+
+  '\t- Creation and manipulation of relational and non-relational Model databases.\n'+
   '\t\n' +
   '\t-Programming languages ​​and work environments:\n' +
-'\t- - HTML | CSS | JavaScript | C# | C++ | T-SQL \n' +
-'\t- - Experience on .NET framework  (Ado.Net, ASP.Net, Winforms, Webforms).\n' +
-'\t- - SQL Server | SQL Management Studio | Git | Github Desktop | VS Code | VS Community.\n';
+'\t- - HTML | CSS | JavaScript | Java | C# | C++ | T-SQL | MySql | MongoDB \n' +
+'\t- - Experience on .NET framework (ASP.Net, Winforms, Webforms) | Node.js | React.js | Express.js\n' +
+'\t- - Power BI | SQL Management Studio | MySqlWorkbrench| Git | Eclipse | VS Code | Imsomnia .\n';
   document.getElementById("texto-descripcion_2").textContent = escribirEnPantalla_2(texto, function () {
 
   });
