@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jost', sans-serif !important;
+    color: #24292e; /* GitHub's text color */
+    background-color: #f6f8fa; /* GitHub's background color */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(150deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.text-container {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+.icon-container{
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.mi-span {
+    background-repeat: no-repeat;
+    margin-right:10px;
+    width: 50px;
+    height: 50px;
+    background-size:contain;
+    
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Espacio entre el título y el resto del contenido */
+}
+h1, h2 {
+    margin: 0;
+}
+
+/* Hacer que la imagen sea responsive */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(7deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    }
+
+nav a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #24292e; /* Slightly darker blue for hover */
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f6f8fa; /* Lighter background color for cards */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background: linear-gradient(150deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+i {
+    font-size: 48px;
+    margin: 20px;
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    i {
+        font-size: 40px;
+        margin: 18px;
+    }
+}
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    i {
+        font-size: 38px;
+        margin: 16px;
+    }
+}
