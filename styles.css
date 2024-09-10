@@ -62,14 +62,6 @@ h1, h2 {
     margin: 0;
 }
 
-/* Hacer que la imagen sea responsive */
-@media (max-width: 768px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 nav {
     display: flex;
     justify-content: center;
@@ -104,7 +96,7 @@ h1, h2 {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom:auto;
     font-size: 18px;
 }
 
@@ -115,6 +107,7 @@ p {
 }
 
 .card {
+    margin:0%;
     background: #f6f8fa; /* Lighter background color for cards */
     padding: 20px;
     border-radius: 8px;
@@ -147,16 +140,16 @@ i {
 }
 .iconcontainer{
     
-    margin: 10px;
+    margin: 5px;
     padding : 10px;
-    display: flex;
+    
     flex-wrap: wrap;
+
    
 
 }
 .icons{
 margin: 5px;
-
 width: 50px;
 height: 50px;
 display:inline-block;
@@ -164,15 +157,17 @@ display:inline-block;
 
 }
 
-.mini{
-    align-self:last baseline;
-margin: 0%;  
-bottom: 0px;  
+#proyects .mini{
+align-self:self-end;
+width: 30px;
+height:30px;
 }
 .tiny{
     position: relative;
     align-self:self-end;
-    margin-top: 50px;
+    height: 30px;
+    margin: 0%;
+    padding : 0%;
    
 }
 /* Para pantallas medianas (tablets) */
@@ -181,7 +176,13 @@ bottom: 0px;
         font-size: 40px;
         margin: 18px;
     }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
 }
+
+
 
 /* Para pantallas pequeñas (teléfonos) */
 @media (max-width: 480px) {
