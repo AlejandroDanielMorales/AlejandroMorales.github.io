@@ -160,8 +160,10 @@ display:inline-block;
 }
 .study-header{
     width:100%;
-    height: auto;
-    max-height:100px;
+    height:100px;
+    img{
+        object-fit: contain;
+    }
 }
 
 .study-card h3 {
@@ -205,5 +207,11 @@ height:30px;
     i {
         font-size: 38px;
         margin: 16px;
+    }
+    .navbar{
+        a{
+            font-size:20px;
+            padding-inline:5px;
+        }
     }
 }
