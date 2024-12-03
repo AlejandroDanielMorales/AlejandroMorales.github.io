@@ -7,20 +7,20 @@
 
 body {
     font-family: 'Jost', sans-serif !important;
-    color: #24292e; /* GitHub's text color */
-    background-color: #f6f8fa; /* GitHub's background color */
+    color: #24292e;
+    background-color: #f6f8fa;
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(150deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    background: linear-gradient(150deg, #24292e, #0366d6); 
     color: #fff;
     padding: 40px 20px;
     text-align: center;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra horizontalmente el contenido */
+    justify-content: center;
 }
 
 .profile-pic {
@@ -34,7 +34,7 @@ header {
 }
 
 .text-container {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left; 
 }
 .icon-container{
     padding: 40px 20px;
@@ -56,7 +56,6 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    /* Espacio entre el título y el resto del contenido */
 }
 h1, h2 {
     margin: 0;
@@ -65,7 +64,7 @@ h1, h2 {
 nav {
     display: flex;
     justify-content: center;
-    background: linear-gradient(7deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    background: linear-gradient(7deg, #24292e, #0366d6);
     position: sticky;
     top:0; 
     z-index:1;   
@@ -80,7 +79,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #24292e; /* Slightly darker blue for hover */
+    background: #24292e; 
     color: #fff;
 }
 
@@ -111,7 +110,7 @@ p {
 
 .card {
     margin:0%;
-    background: #f6f8fa; /* Lighter background color for cards */
+    background: #f6f8fa; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -124,7 +123,7 @@ p {
 }
 
 footer {
-    background: linear-gradient(150deg, #24292e, #0366d6); /* Gradiente diagonal de gris a azul */
+    background: linear-gradient(150deg, #24292e, #0366d6); 
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -158,6 +157,20 @@ height: 50px;
 display:inline-block;
 
 
+}
+.study-header{
+    width:100%;
+    height: auto;
+    max-height:100px;
+}
+
+.study-card h3 {
+    min-height:75px;
+}
+
+.study-card p {
+    margin-top: 0; 
+    margin-bottom: 10px;
 }
 
 #proyects .mini{
